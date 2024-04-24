@@ -68,7 +68,7 @@ client.once("ready", async() => {
   }
 });
 
-client.login(process.env.TOKEN).then(() => {
+client.login(config.TOKEN).then(() => {
 	console.log(`[-] Discord API'ye istek gönderiliyor.`);
 	eval("console.clear()")
 }).catch(() => {
